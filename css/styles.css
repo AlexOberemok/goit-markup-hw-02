@@ -1,6 +1,13 @@
+:root {
+    --main-header-color: #2196F3;
+    --second-header-color: #212121;
+    --third-header-color: #757575;
+    --hero-btn: #ffffff;
+    --h2-color: #212121;
+}
+
 body {
     font-family: Roboto, Raleway, sans-serif;
-
 }
 
 .link {
@@ -10,6 +17,7 @@ body {
 .list {
     list-style: none;
 }
+
 /*--------------------------LOGO-----------------------*/
 
 .header-logo {
@@ -19,13 +27,13 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--main-header-color)
 }
 .header-logo-span {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #212121
+    color: #000000;
 }
 
 /*--------------------------HEADER----------------------*/
@@ -37,7 +45,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--second-header-color)
 }
 
 .header-mail {
@@ -45,7 +53,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--third-header-color)
 }
 
 .header-tel {
@@ -53,7 +61,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--third-header-color)
 }
 
 .header-link {
@@ -61,22 +69,22 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--second-header-color)
 }
 
 .header-link:hover, 
 .header-link:focus {
-    color: #2196F3;
+    color: var(--main-header-color)
 }
 
 .header-mail:hover,
 .header-mail:focus {
-    color: #2196F3;
+    color: var(--main-header-color)
 }
 
 .header-tel:hover,
 .header-tel:focus {
-    color: #2196F3
+    color: var(--main-header-color)
 }
 
 
@@ -84,7 +92,6 @@ body {
 
 .hero-main-text {
     background: #2F303A;
-
     font-family: inherit;
     font-weight: 900;
     font-size: 44px;
@@ -104,7 +111,7 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--hero-btn);
     background-color: #2196F3;
     cursor: pointer;
 }
@@ -119,21 +126,40 @@ body {
     color: #212121;
 }
 
+.hero-bottom-text {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
 
 
 /*-----------------------DESCRIPTION-----------------------*/
 
-.descriprion {
-    font-family: 'Roboto';
+.description {
+    font-family: inherit 
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--h2-color)
 }
 
 /*-------------------------TEAM---------------------------*/
+
+.team {
+    font-family: inherit
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--h2-color)
+}
 
 .team-top-text {
     font-family: 'Roboto';
@@ -141,7 +167,7 @@ body {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--h2-color)
 }
 
 .team-bottom-text {
@@ -165,7 +191,7 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-color: #2196F3;
+color: var(--main-header-color)
 }
 
 .footer-logo-span {
@@ -203,17 +229,60 @@ color: #2196F3;
 
 .footer-link-address:hover,
 .footer-link-address:focus {
-    color: #2196F3;
+    color: var(--main-header-color)
 }
 
 .footer-link-mail:hover,
 .footer-link-mail:focus {
-    color: #2196F3;
+    color: var(--main-header-color)
 }
 
 .footer-link-tel:hover,
 .footer-link-tel:focus {
-    color: #2196F3;
+    color: var(--main-header-color)
 }
 
 /*----------------PORTFOLIO-----------------------*/
+
+.portfolio-button {
+    width: 128px;
+    height: 38px;
+    left: 576px;
+    top: 174px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border-style: none;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background-color: #2196F3;;
+    color: #FFFFFF;
+}
+
+.portfolio-top-text {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.portfolio-bottom-text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
